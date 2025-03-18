@@ -1,0 +1,27 @@
+.heading-text{
+    font-size:22px;
+    font-weight: 600;
+}
+.date-cls{
+    font-size: 15px;   
+}
+.timing-cls{
+    font-size:10px;
+}
+.created-cls{
+    font-size: 13px;
+}
+.role-cls{
+    font-size:13px;
+    color:#2474c5;
+}
+.name-cls{
+    font-size:15px;
+    font-weight: 600;
+}
+.custom-date-range {
+    height: 289px; 
+  }
+  .rdrDateDisplayWrapper{
+    display: none;
+  }

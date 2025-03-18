@@ -1,0 +1,45 @@
+.grid-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        'h h h h'
+        'infoCard infoCard assessmentCard assessmentCard'
+        'taskmanagement taskmanagement taskmanagement taskmanagement'
+        'meetingInfo meetingInfo meetingInfo hiringInfo'
+        'postJobCard postJobCard postJobCard hiringInfo'
+        'candidateStatus candidateStatus candidateStatus hiringInfo';
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+.item1 {
+    grid-area: h;
+}
+
+.item2 {
+    grid-area: infoCard;
+}
+
+.item3 {
+    grid-area: assessmentCard;
+}
+.item4 {
+    grid-area: taskmanagement;
+}
+.item5 {
+    grid-area: meetingInfo;
+}
+
+.item6 {
+    grid-area: hiringInfo;
+}
+
+.item7 {
+    grid-area: postJobCard;
+}
+
+.item8 {
+    grid-area: candidateStatus;
+}
+

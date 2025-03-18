@@ -1,0 +1,33 @@
+.chart-container {
+    padding:8px 35px 11px 7px;
+    box-sizing: border-box;
+    height: 244px;
+    width: 543px;
+}
+
+.select-container {
+  margin-bottom: 20px;
+  position: relative;
+}
+.heading{
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#monthSelect {
+ position: absolute;
+right: 0;
+ /* padding: 5px; */
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+}
+
+/* #monthSelect:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+} */

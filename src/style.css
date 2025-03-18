@@ -1,0 +1,48 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   }
+/* .navbarCls img{
+    width: 231.8px;
+    height: 61.64px;
+
+} */
+.row{
+    padding: 0;
+    margin: 0;
+}
+.nav-link {
+    color: black; /* Default color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .nav-link:hover {
+    color: darkgray; /* Color on hover */
+  }
+  
+  .nav-link-active {
+    color: red; /* Color when active */
+  }
+  .profile{
+    width: 34.8px;
+    height: 31.64px;
+  }
+  .light {
+    background-color: #F5F5F5;
+    color: black;
+    --card-background: #ffffff;
+    --card-text: #000000;
+  }
+  
+  .dark {
+    background-color: black;
+    color: white;
+  --card-background: #333333;
+  --card-text: #ffffff;
+  }
+  .card {
+    background-color: var(--card-background);
+    color: var(--card-text);
+  }

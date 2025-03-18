@@ -1,0 +1,89 @@
+.table th, .table td {
+    white-space: nowrap; /* Prevent text wrapping */
+    text-wrap: nowrap;
+  }
+  
+  .nowrap-table {
+    display: block;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on iOS */
+  }
+  
+  .column-id {
+    width: 80px;
+    text-align: center;
+  }
+  
+  .column-name {
+    width: 150px;
+    text-align: left;
+  }
+  
+  .column-position {
+    width: 200px;
+    text-align: left;
+  }
+  
+  .column-level {
+    width: 100px;
+    text-align: center;
+  }
+  
+  .column-marks {
+    width: 100px;
+    text-align: center;
+  }
+  
+  .column-status {
+    width: 150px;
+    text-align: center;
+  }
+  
+  .column-actions {
+    width: 150px;
+    text-align: center; /* Center align buttons in action column */
+  }
+  
+.status-active {
+    background: #FFF9EC;
+    color: #F5C961;
+    font-weight: 500;
+    padding-left: 5px;
+    padding-top: 1px;
+    padding-bottom: 4px;
+    padding-right: 5px;
+  }
+  
+  .status-inactive {
+    background: #E73B3B26;
+    color: #D12323;
+    font-weight: 500;
+    padding-left: 5px;
+    padding-top: 1px;
+    padding-bottom: 4px;
+    padding-right: 5px;
+  }
+  
+  .status-hired {
+    background: #0EAD0B26;
+    color: #108F0E;
+    font-weight: 500;
+    padding-left: 5px;
+    padding-top: 1px;
+    padding-bottom: 4px;
+    padding-right: 5px;
+  }
+
+  .status-notscore{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #f8d7da;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 17px;
+    color: #D12323;
+  }

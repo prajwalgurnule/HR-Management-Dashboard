@@ -1,0 +1,10 @@
+.card-cls{
+    background: linear-gradient(74deg, #0A66C2 6.27%, #5994CE 90.96%);
+    
+}
+
+.pos-cls{
+    position: absolute;
+    left:50px;
+    top:-124px;
+}

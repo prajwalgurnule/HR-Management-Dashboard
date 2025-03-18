@@ -1,0 +1,33 @@
+.nav-item{
+    padding:20px;
+}
+
+.nav-item a {
+    color: black; /* Default color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .nav-link:hover {
+    color: darkgray; /* Color on hover */
+  }
+  
+  .nav-link-active {
+    color: red; /* Color when active */
+  }
+ 
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-container {
+    height: 100%;
+  }
+  
+  /* .nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  } */
+  

@@ -1,0 +1,51 @@
+.horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    /* height: 100vh; */
+
+  }
+  
+  .scroll-card {
+    flex: 0 0 auto;
+    width:90%;
+    margin-right: 10px;
+  }
+
+/* Webkit Browsers (Chrome, Safari) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;  /* Adjust the width of the scrollbar */
+  height: 12px;  /* Adjust the height of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;  /* Background color of the track */
+  border-radius: 10px;  /* Radius for rounded corners of the track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #2474c5;  /* Color of the scrollbar thumb */
+  border-radius: 10px;  /* Radius for rounded corners of the thumb */
+  border: 3px solid #f1f1f1;  /* Optional: border around the thumb to match track background */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;  /* Color when the thumb is hovered */
+}
+
+/* Hide scrollbar arrows */
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #2474c5 #f1f1f1;
+}
+
+/* Applying the custom scrollbar styles to specific elements */
+.custom-scrollbar {
+  overflow-y: hidden;
+  overflow-x: scroll; /* Hide horizontal scrollbar if not needed */
+}
