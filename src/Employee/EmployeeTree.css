@@ -1,0 +1,113 @@
+.employee-new-tree-container {
+    width: 100%;
+    height: calc(100vh - 150px);
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 16px;
+}
+
+.employee-new-node-bg {
+    fill: white;
+    stroke: #d1d5db;
+    stroke-width: 1px;
+    filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.1));
+    transition: all 0.3s ease;
+}
+
+.employee-new-node {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    height: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.employee-new-node:hover ~ .employee-new-node-bg {
+    transform: translateY(-3px);
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+}
+
+.employee-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    flex-shrink: 0;
+    background: #cbd5e1;
+    color: #1e293b;
+    border: 3px solid white;
+    transition: transform 0.3s ease;
+}
+
+.employee-new-node:hover .employee-avatar {
+    transform: rotate(10deg);
+}
+
+.employee-info {
+    flex-grow: 1;
+    min-width: 0;
+    color: #1e293b;
+}
+
+.employee-info h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.employee-info p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    color: #475569;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Node color classes */
+.node-ceo { fill: #f97316; }
+.node-cto { fill: #ef4444; }
+.node-coo { fill: #10b981; }
+.node-cfo { fill: #f59e0b; }
+.node-finance { fill: #0d9488; }
+.node-accountant { fill: #2563eb; }
+.node-security { fill: #7c3aed; }
+.node-operations { fill: #6366f1; }
+.node-default { fill: #e2e8f0; }
+
+/* Tree connection lines */
+.rd3t-link {
+    stroke: #94a3b8 !important;
+    stroke-width: 2px !important;
+    transition: stroke 0.3s ease;
+}
+
+/* Text color adjustments for dark backgrounds */
+.node-ceo .employee-info,
+.node-cto .employee-info,
+.node-coo .employee-info,
+.node-finance .employee-info,
+.node-security .employee-info,
+.node-operations .employee-info {
+    color: white !important;
+}
+
+.node-ceo .employee-info a,
+.node-cto .employee-info a,
+.node-coo .employee-info a,
+.node-finance .employee-info a,
+.node-security .employee-info a,
+.node-operations .employee-info a {
+    color: #bfdbfe !important;
+}

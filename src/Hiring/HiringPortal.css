@@ -1,0 +1,555 @@
+/* Base styles */
+.hiring-portal {
+    font-family: 'Inter', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    color: #1E293B;
+    background-color: #F8FAFC;
+    min-height: 100vh;
+  }
+  
+  /* Header styles */
+  .hiring-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  
+  .hiring-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1E293B;
+    margin: 0;
+  }
+  
+  .hiring-header-controls {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .hiring-search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hiring-search-input {
+    padding: 10px 16px 10px 40px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    width: 280px;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s;
+  }
+  
+  .hiring-search-input:focus {
+    outline: none;
+    border-color: #6366F1;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+  }
+  
+  .hiring-search-icon {
+    position: absolute;
+    left: 12px;
+    color: #94A3B8;
+    font-size: 18px;
+  }
+  
+  .hiring-create-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background-color: #6366F1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .hiring-create-button:hover {
+    background-color: #4F46E5;
+  }
+  
+  .hiring-add-icon {
+    font-size: 18px;
+  }
+  
+  /* Tab navigation */
+  .hiring-tabs {
+    display: flex;
+    border-bottom: 1px solid #E2E8F0;
+    margin-bottom: 24px;
+  }
+  
+  .hiring-tab-button {
+    padding: 12px 24px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #64748B;
+    transition: all 0.2s;
+  }
+  
+  .hiring-tab-button.hiring-active {
+    color: #6366F1;
+    border-bottom-color: #6366F1;
+  }
+  
+  .hiring-tab-button:hover {
+    color: #4F46E5;
+  }
+  
+  /* Filters section */
+  .filters-section {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .filter-group label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #64748B;
+  }
+  
+  .filter-group select {
+    padding: 8px 12px;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    min-width: 150px;
+  }
+  
+  /* Jobs table */
+  .jobs-table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .jobs-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .jobs-table th, 
+  .jobs-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #E2E8F0;
+  }
+  
+  .jobs-table th {
+    font-weight: 600;
+    color: #64748B;
+    background-color: #F8FAFC;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  
+  .jobs-table tbody tr:hover {
+    background-color: #F8FAFC;
+  }
+  
+  .status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .status-badge.active {
+    background-color: #D1FAE5;
+    color: #059669;
+  }
+  
+  .status-badge.draft {
+    background-color: #FEF3C7;
+    color: #D97706;
+  }
+  
+  .action-button {
+    background: none;
+    border: none;
+    color: #64748B;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 8px;
+  }
+  
+  .no-jobs-message {
+    text-align: center;
+    padding: 40px;
+    color: #64748B;
+  }
+  
+  /* Pagination */
+  .pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .rows-per-page {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #64748B;
+  }
+  
+  .rows-per-page select {
+    padding: 6px 10px;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+  }
+  
+  .pagination-info {
+    font-size: 14px;
+    color: #64748B;
+  }
+  
+  .pagination-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .pagination-buttons button {
+    padding: 6px 12px;
+    border: 1px solid #E2E8F0;
+    background: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pagination-buttons button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .pagination-buttons button.active {
+    background-color: #6366F1;
+    color: white;
+    border-color: #6366F1;
+  }
+  
+  /* Add Job Form */
+  .add-job-container {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back-to-jobs-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: #64748B;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .back-icon {
+    font-size: 18px;
+  }
+  
+  .add-job-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-section h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    color: #1E293B;
+  }
+  
+  .form-section input,
+  .form-section textarea,
+  .form-section select {
+    padding: 10px 12px;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .form-section textarea {
+    resize: vertical;
+  }
+  
+  .form-columns {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .submit-job-button {
+    padding: 10px 24px;
+    background-color: #6366F1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .submit-job-button:hover {
+    background-color: #4F46E5;
+  }
+  
+  /* Applications tab */
+  .applications-container {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .form-columns {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hiring-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    
+    .hiring-header-controls {
+      width: 100%;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .hiring-search-input {
+      width: 100%;
+    }
+    
+    .filters-section {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hiring-portal {
+      padding: 16px;
+    }
+    
+    .jobs-table th,
+    .jobs-table td {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+    
+    .pagination-container {
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+    }
+  }
+
+/* Add these styles to your existing HiringPortal.css */
+
+/* Application Management */
+.applications-header {
+    margin-bottom: 20px;
+  }
+  
+  .applications-header h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #1E293B;
+  }
+  
+  .applications-header p {
+    color: #64748B;
+    margin: 0;
+  }
+  
+  .app-filters-section {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .applications-table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .applications-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .applications-table th, 
+  .applications-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #E2E8F0;
+  }
+  
+  .applications-table th {
+    font-weight: 600;
+    color: #64748B;
+    background-color: #F8FAFC;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  
+  .applications-table tbody tr:hover {
+    background-color: #F8FAFC;
+  }
+  
+  .no-apps-message {
+    text-align: center;
+    padding: 40px;
+    color: #64748B;
+  }
+  
+  /* Status Select Dropdown */
+  .status-select {
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #E2E8F0;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .status-select:hover {
+    border-color: #94A3B8;
+  }
+  
+  .status-select:focus {
+    outline: none;
+    border-color: #6366F1;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+  }
+  
+  .status-select.submitted {
+    background-color: #EFF6FF;
+    color: #1E40AF;
+  }
+  
+  .status-select.under-review {
+    background-color: #FEF3C7;
+    color: #92400E;
+  }
+  
+  .status-select.interview-scheduled {
+    background-color: #ECFDF5;
+    color: #065F46;
+  }
+  
+  .status-select.rejected {
+    background-color: #FEE2E2;
+    color: #991B1B;
+  }
+  
+  .status-select.hired {
+    background-color: #D1FAE5;
+    color: #065F46;
+  }
+  
+  /* Action Menu */
+  .action-menu-container {
+    position: relative;
+  }
+  
+  .action-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    min-width: 150px;
+  }
+  
+  .action-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 8px 12px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+    color: #1E293B;
+  }
+  
+  .action-menu-item:hover {
+    background-color: #F8FAFC;
+  }
+  
+  .action-menu-item.delete {
+    color: #EF4444;
+  }
+  
+  .action-icon {
+    font-size: 14px;
+  }

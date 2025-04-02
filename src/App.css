@@ -1,0 +1,28 @@
+.app-container {
+  min-height: calc(100vh - 60px); /* Adjust based on your navbar height */
+}
+
+.sidebar-container {
+  margin-top: 20px;
+  position: sticky;
+  top: 60px; /* Adjust based on your navbar height */
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+.main-content {
+  padding: 20px;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Add theme variables if not already defined */
+.light {
+  --background-color: #ffffff;
+  --text-color: #333333;
+}
+
+.dark {
+  --background-color: #1a1a1a;
+  --text-color: #f0f0f0;
+}

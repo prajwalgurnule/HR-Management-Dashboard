@@ -1,0 +1,264 @@
+
+/* Main container */
+.projects-container {
+  background-color: white;
+  height: 100vh;
+  overflow: auto;
+}
+
+/* Header section */
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.projects-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.new-project-btn {
+  display: flex;
+  align-items: center;
+  background-color: rgba(108, 92, 231, 0.6);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.new-project-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Filter and search section */
+.filter-search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #e5e7eb;
+}
+
+.filter-btn.active {
+  background-color: rgba(108, 92, 231, 0.6);
+  color: white;
+}
+
+.search-input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.project-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(179, 145, 145, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.project-card-content {
+  padding: 1.25rem;
+}
+
+.project-icon {
+  color: #3b82f6;
+  font-size: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.project-status {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.project-priority {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.project-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  color: #4b5563;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.team-member {
+  font-size: 0.75rem;
+  padding: 0.40rem 1.2rem;
+  border-radius: 9999px;
+  background-color: #f3e8ff;
+  color: #6b21a8;
+}
+
+.project-due-date {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.project-progress {
+  display: flex;
+  align-items: center;
+}
+
+.project-tasks-count {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+}
+
+.progress-bar {
+  width: 6rem;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  height: 0.5rem;
+}
+
+.progress-fill {
+  background-color: #2563eb;
+  height: 0.5rem;
+  border-radius: 9999px;
+}
+
+/* Project detail view */
+.back-button {
+  display: flex;
+  align-items: center;
+  color: #2563eb;
+  margin-bottom: 1.5rem;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.project-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 50;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  max-width: 32rem;
+}
+
+/* Status colors */
+.status-not-started {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.status-in-progress {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.status-completed {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+/* Priority colors */
+.priority-high {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.priority-medium {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.priority-low {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .filter-search-container {
+    flex-direction: row;
+  }
+  
+  .search-input {
+    width: 16rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .project-detail-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}

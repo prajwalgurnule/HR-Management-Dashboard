@@ -1,0 +1,169 @@
+.sm-container {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+  }
+  
+  .sm-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .sm-title-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sm-icon-container {
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    background-color: #f3e8ff;
+    color: #7e22ce;
+    margin-right: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sm-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .sm-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1e293b;
+  }
+  
+  .sm-info-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #94a3b8;
+    transition: all 0.2s;
+  }
+  
+  .sm-info-button:hover {
+    color: #8b5cf6;
+  }
+  
+  .sm-info-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .sm-tooltip {
+    position: absolute;
+    right: 1.5rem;
+    top: 3.5rem;
+    background-color: white;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    font-size: 0.875rem;
+    color: #64748b;
+    max-width: 12rem;
+    z-index: 10;
+  }
+  
+  .sm-chart-container {
+    position: relative;
+    height: 16rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sm-chart-wrapper {
+    width: 14rem;
+    height: 14rem;
+  }
+  
+  .sm-active-skill {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none;
+  }
+  
+  .sm-skill-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #7e22ce;
+  }
+  
+  .sm-skill-name {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-top: 0.25rem;
+  }
+  
+  .sm-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .sm-skill-button {
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: #f8fafc;
+    color: #475569;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .sm-skill-button-active {
+    background-color: #7e22ce;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .sm-levels-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    color: #64748b;
+  }
+  
+  .sm-level {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sm-level-marker {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    margin-right: 0.25rem;
+  }
+  
+  .sm-level-marker.red {
+    background-color: #ef4444;
+  }
+  
+  .sm-level-marker.yellow {
+    background-color: #f59e0b;
+  }
+  
+  .sm-level-marker.green {
+    background-color: #10b981;
+  }

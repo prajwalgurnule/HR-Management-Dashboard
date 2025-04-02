@@ -16,7 +16,7 @@ function MainPage() {
     <>
        <div className='grid-container'>
         <div className='item1 m-3'>
-            <div style={{fontSize:'30px'}}><b>HR Employee</b></div>
+            <div style={{fontSize:'30px'}}><b>Hey, Arnold Smith👋</b></div>
             <div className='pt-2'>Enjoy your selecting potential candidates Tracking and Management System</div>
         </div>
             <div className='item2 ms-3 pt-3'>

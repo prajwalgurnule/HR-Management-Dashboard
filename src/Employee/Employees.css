@@ -1,0 +1,73 @@
+/* Employees.css */
+.employee-new-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    overflow: hidden;
+    background-color: var(--background-color);
+}
+
+.employee-new-header {
+    padding: 0 1rem 1rem 1rem;
+    background-color: var(--header-bg-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-new-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.employee-new-title {
+    font-size: 1.875rem; /* 30px */
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.employee-new-subtitle {
+    padding-top: 0.5rem;
+    color: var(--text-muted);
+}
+
+.employee-new-main {
+    flex: 1;
+    min-height: 0; /* Fix for flexbox overflow */
+    overflow: hidden;
+}
+
+.employee-new-card {
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--card-border-color);
+    background-color: var(--card-bg-color);
+    overflow: hidden;
+}
+
+.employee-new-card-body {
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Theme variables */
+:root {
+    --background-color: #f8f9fa;
+    --header-bg-color: #ffffff;
+    --text-color: #212529;
+    --text-muted: #6c757d;
+    --card-bg-color: #ffffff;
+    --card-border-color: #dee2e6;
+}
+
+[data-theme="dark"] {
+    --background-color: #1a1a1a;
+    --header-bg-color: #2d2d2d;
+    --text-color: #f8f9fa;
+    --text-muted: #adb5bd;
+    --card-bg-color: #2d2d2d;
+    --card-border-color: #444;
+}

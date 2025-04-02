@@ -1,17 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
-import {BrowserRouter} from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-import { ThemeProvider } from './Context/ThemeContext.jsx';
+import { ThemeProvider } from './Context/ThemeContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  // <React.StrictMode>
-      <BrowserRouter>
-        <ThemeProvider>
-            <App />
-          </ThemeProvider>  
-      </BrowserRouter>
-  // </React.StrictMode>,
+  <React.StrictMode>
+    <BrowserRouter>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </BrowserRouter>
+  </React.StrictMode>
 )

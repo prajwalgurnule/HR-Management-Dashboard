@@ -1,33 +1,28 @@
-.nav-item{
-    padding:20px;
+/* Smooth scrolling for menu */
+.flex-1 {
+    flex: 1 1 0%;
+    overflow-y: auto;
 }
 
-.nav-item a {
-    color: black; /* Default color */
-    text-decoration: none; /* Remove underline */
-  }
-  
-  .nav-link:hover {
-    color: darkgray; /* Color on hover */
-  }
-  
-  .nav-link-active {
-    color: red; /* Color when active */
-  }
- 
-  html, body, #root {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-container {
-    height: 100%;
-  }
-  
-  /* .nav {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  } */
-  
+/* Custom scrollbar for dark mode */
+.dark .flex-1::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dark .flex-1::-webkit-scrollbar-thumb {
+    background-color: #4b5563;
+    border-radius: 3px;
+}
+
+/* Transition effects */
+.transition-all {
+    transition-property: all;
+}
+
+.duration-300 {
+    transition-duration: 300ms;
+}
+
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+}
